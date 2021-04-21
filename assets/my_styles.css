@@ -1,0 +1,32 @@
+title {
+    color: #AB3A2D;
+}
+  
+h1 {
+    color: #AB3A2D;
+}
+  
+h2 {
+    color: #B1422F;
+}
+
+.boxes {
+    background-color: #E7CBBF;
+    padding: 10px;
+    /* page-break-inside: avoid; */
+}
+
+.pagedjs_page.pagedjs_first_page {
+    background-size: 100%;
+    background-position: center 80%;
+    color: white;
+    background-color: #AB382D;
+    
+}
+
+.pagedjs_page:nth-last-of-type(1) {
+    background-color: #AB382D;
+    color: white;
+    font-size: x-small;
+    text-align: center;
+}

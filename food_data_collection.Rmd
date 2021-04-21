@@ -1,0 +1,156 @@
+---
+title: "Food Data Collection in Household Consumption and Expenditure Surveys"
+subtitle: "Guidelines for Low- and Middle-Income Countries"
+author: "Nathalie Troubat and Alberto Zezza"
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_paged:
+    css:
+      - default-fonts
+      - default-page
+      - default
+      - assets/my_styles.css
+    toc: true
+    # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
+    self_contained: true
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+:::front-cover
+```{r, out.height='100%', echo=FALSE}
+knitr::include_graphics(path = "assets/food-data-collection-cover.png")
+```
+:::
+
+# Preface {-}
+
+The measurement of food consumption and expenditure is a fundamental component of any analysis of poverty and food security, and hence the importance and timeliness of devoting attention to the topic cannot be overemphasized as the international development community confronts the challenges of monitoring progress in implementing the 2030 Agenda for Sustainable Development.
+
+In 2014, the International Household Survey Network published a desk review of the reliability and relevance of survey questions as included in 100 household surveys from low- and middle-income countries. The report was presented in March 2014 at the forty-fifth session of the United Nations Statistical Commission (UNSC), in a seminar organized by the Inter-Agency and Expert Group on Food Security, Agricultural and Rural Statistics (IAEG-AG).
+
+The assessment painted a bleak picture in terms of heterogeneity in survey design and overall relevance and reliability of the data being collected. On the positive side, it pointed to many areas in which even marginal changes to survey and questionnaire design could lead to a significant increase in reliability and consequently, great improvements in measurement accuracy. The report, which sparked a lot of interest from development partners and UNSC member countries, prompted IAEG-AG to pursue this area of work with the ultimate objective of developing, validating, and promoting scalable standards for the measurement of food consumption in household surveys.
+
+The work started with an expert workshop that took place in Rome in November 2014. Successive versions of the guidelines were drafted and discussed at various IAEG-AG meetings, and in another expert workshop organized in November 2016 in Rome. The guidelines were put together by a joint FAO-World Bank team, with inputs and comments received from representatives of national statistical offices, international organizations, survey practitioners, academics, and experts in different disciplines (statistics, economics, nutrition, food security, and analysis). A list of the main contributors is included in the acknowledgment section. In December 2017 a draft of the guidelines was circulated to 148 National Statistical Offices from low- to high-income countries for comments. The document was revised following that consultation and submitted to UNSC which endorsed it at its forty-ninth session in March 2018 under item 3(j) of the agenda, agricultural and rural statistics. The version presented here reflects what was endorsed by the Commission, edited for language. The process received support from the Global Strategy for Agricultural and Rural Statistics.
+
+The document is intended to be a reference document for National Statistical Offices, survey practitioners, and national and international agencies designing household surveys that involve the collection of food consumption and expenditure data.
+
+# Introduction {#intro}
+
+## Background and Motivation
+
+Food is an important component of many fundamental dimensions of welfare, such as food security, nutrition, and health. It comprises the largest share of total household expenditure in low-income countries, accounting for about 50 percent of the average household budget (USDA, 2011) and accordingly.it is key for consumption and poverty analysis. Low levels of food access play a role in explaining why around 815 million individuals were estimated to be chronically undernourished in 2016 (FAO, WFP, IFAD, UNICEF, and WHO, 2017). Data on food consumption and expenditure underpin the most widely used measures of poverty and of food security. The collection of high-quality food consumption data is, therefore, central to the assessment and monitoring of the well-being of any human population, and is of interest to governments, international agencies, and anyone concerned with monitoring and understanding trends in social, economic, and human development.
+
+:::{#box-1 .boxes .page-break-before}
+
+**BOX 1 — THE CONCEPTS OF FOOD CONSUMPTION**<br>
+Food data collected in HCES can be diverse, and often refer to diverse concepts. Even the term “food consumption” lends itself to multiple meanings. When the focus of the analysis is expenditure, the term “consumption” can designate the purchase of foods, disregarding the end-use of what was purchased. At the opposite end, analyses and surveys that focus on nutrition use the term “food consumption” to designate the intake of a food, possibly net of unusable parts. Throughout this document the term “food consumption” is used in a general sense and encompasses concepts or data that include food consumption, acquisition, expenditure, and intake. Additional descriptive are specifically used in places where their specific meanings are addressed or contrasted, or for details that relate to that precise terminology
+```{r, include=FALSE}
+# use this trick: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#custom-blocks
+```
+
+:::
+
+Data on food consumption are needed, for example, to build the indicators and monitor some of the targets set for Sustainable Development Goals 1 and 2 (ending poverty and hunger). Similarly, data on food consumption are needed to assess and guide the mandate of FAO to help eradicate hunger, food insecurity, and malnutrition and the twin goals of the World Bank to eliminate extreme poverty and boost shared prosperity.^[For a list of indicators that can be derived from food data collected in HCES, see Moltedo et al. (2014); Foster et al. (2013).] Even more importantly, national and local governments and non-governmental organizations need high-quality food consumption data to guide local and regional analysis and policy, as the mismeasurement of food consumption can lead to the misallocation of funds and may compromise the design, monitoring, and evaluation of relevant policies and programs.
+
+...and so on...
+
+## Objectives and audience
+
+A product of a consultation process within the international statistical community, which culminated in the endorsement by UNSC member countries at its 49th Session, these guidelines are intended to be a reference document for national statistical offices and survey practitioners designing household consumption and expenditure surveys. In putting forward these scalable standards the IAEG-AG also seeks to promote an increase in the harmonization of survey instruments and the comparability of the resulting data. Against the backdrop of this institutional context, the guidelines have multiple aims:
+
+First, they will provide survey practitioners tasked with designing and implementing HCES in low-income settings with a harmonized set of guiding principles. The aim is to inform the main decisions that need to be taken when designing HCES, factoring in the objective of serving a wide range of users, without compromising data quality.
+
+Second, by putting forward a vision for some of these principles, the guidelines can serve as the basis for an international dialogue between practitioners and data users coming from different disciplines and looking for different features in the data. 
+
+Third, a set of guidelines that can be widely shared and agreed upon will increase the harmonization of the surveys that are implemented (and the resulting data) and give greater coherence to the advice that national statistical offices receive from the international statistical community. Often, different users and institutions head in different directions, resulting in countries adopting very different approaches. Resulting survey design can end up reflecting priorities of donors rather than those of countries and detract from the comparability of data across countries and with other surveys within the same country.
+
+Fourth, by identifying areas in which the consensus is based on a limited evidence-base, the guidelines can be used to chart the way for an internationally agreed survey methodology research agenda. Importantly, the guidelines can be an entry point for sustaining an interdisciplinary dialogue for the advancement of this agenda, which can bring together statisticians, economists, food security analysts, and nutritionists to contribute to an effective repurposing of HCES that can increase the surveys’ “value for money.”
+
+...and so forth...
+
+```{r, echo = FALSE, out.width="100%", fig.cap= "Differences in poverty, inequality and hunger measures associated with different survey design options" }
+knitr::include_graphics(path = 'assets/impact of survey design.png')
+```
+
+# Review of the Evidence and Summary of the Main Issues {data-short-title="Review of Evidence"}
+
+A comprehensive review of the different uses of HCES is provided in Smith et al. (2014). Among those uses are poverty measurement, informing food security assessment, providing inputs in the compilation of food balance sheets, providing information for the planning and monitoring of nutrition interventions, informing the compilation of national accounts, and collecting data for compilation of CPI. As a result of the different uses, and the constituencies of users associated with them, the demands from the data vary, and depending on the exact nature of HCES being designed, there are going to be different sets of constraints and opportunities for repurposing. Any attempt at adjusting the design of a survey needs to take into account the analytical needs of the different users. In this document, the main uses considered in setting the criteria for guiding survey design are food security assessments, poverty measurement, and nutrition policy and programming.
+
+Some key issues in the measurement of poverty and food security, and for monitoring nutrition interventions, that are useful for understanding the data needs connected to those uses are presented in the Annex 1.^[See Annex 1.] In what follows, the document contains a summary of the literature on key choices that confront practitioners as they design and implement HCES questionnaires. Those aspects were identified as priority areas in a review conducted by Smith et al. (2014) and by experts that participated in the consultation process convened by the IAEG-AG and led by FAO and the World Bank. Several of those issues are also treated, theoretically and empirically, in a recent issue of the journal Food Policy. The volume includes case studies from a diverse set of developing and OECD countries, analyzing how different survey design options affect the quality of the data being collected and, in turn, the implications for statistical inference and policy analysis (Zezza et al., 2017).
+
+## Recall Versus Diary and Length of Reference Period
+
+Data on household food consumption (and acquisition) is commonly collected either by asking households to keep a diary over a reference period (e.g. days or weeks) or through interviews in which respondents are asked to recall consumption for a specific period (e.g. the past week or the past 30 days). A large body of evidence from research and practical experience shows that the method chosen can significantly affect the resulting estimates of consumption.
+
+The _recall period_ is referred to as the period over which respondents are asked to recall the consumption of food items. The recall period differs from the _reference period_ when households are interviewed multiple times during multiple visits to the household Smith et al., (2014). For example, if households are interviewed about their food consumption in the last seven days over four weekly visits, the recall period is seven days and the reference period is 28 days.
+
+In diary methods, households are generally asked to record consumption at the moment in which it takes place (e.g. at meal times or at time of purchase). However, in practice, households often fill in information about their consumption at the end of the day, or during supervised visits from enumerators (for example, for two-day recall periods if visited every other day). This blurs the line between diary and recall methods, especially when respondent illiteracy is high and supervisors support completion of the diary with visits every few days.
+
+...and so forth...
+
+## Seasonality, number of visits
+
+Consumption and expenditure patterns often show seasonal variations that are linked to the agricultural production season, cyclical events, such as floods and droughts, or cultural events (e.g. Ramadan, Christmas), which affect food availability, prices and customary consumption practices. The existence of seasonality in food consumption patterns is well-established (Paxson 1992, 1993; Alderman, 1996) but its extent depends greatly on the context.
+
+Seasonality can be particularly important for food consumption because seasonal variations in dietary patterns, overall quantities of food consumed, and the consumption of particular nutrients can be pronounced, partly because of its relationship with food production cycles (Coates et al., 2012). D’Souza and Jolliffe (2012) find that household consumption in Afghanistan can be as much as one third lower in the lean season compared with the post-harvest season. The different levels of consumption, if taken at face value, would result in estimates of the poverty headcount doubling from 23 percent in the fall to 46 in the following summer (D’Souza and Jolliffe, 2012). Seasonality in food prices is a key concern as it is found to be significant and can affect estimates of poverty and consumption (Gilbert et al., 2016). That is of course a major issue for surveys collecting data for the calculation of CPI.
+
+Seasonal variations can also originate from increased expenditure during festivals and holidays. In the United States, it has been established that consumption is higher during holidays and summer months (Barsky and Miron, 1988). In low- and middle-income countries, expenditure can vary significantly with holidays, festivals, and religious observances. Jolliffe and Serajuddin (2015), using data for Jordan, note that during the period of Ramadan, consumption levels are 11 percent greater than during other periods of the year. The festive expenditures can be difficult to capture in surveys because it is often difficult for survey fieldwork to operate as normal during festive periods. A few surveys, such as the Living Standards Surveys in Viet Nam, use a special recall module for food consumption during festive periods, with analysis typically then spread over the consumption estimates for the households observed in the rest of the year.
+
+:::back-cover
+
+SELECT LSMS GUIDEBOOKS
+
+_Measuring Household Expenditure on Education_
+Gbemisola Oseni, Friedrich Huebler, Kevin McGee, Akuffo Amankwah, Elise Legault, Andonirina Rakotonarivo
+December 2018
+
+_Spectral Soil Analysis & Household Surveys_
+Sydney Gourlay, Ermias Aynekulu, Calogero Carletto, and Keith Shepherd
+October 2017
+
+_The Use of Non-Standard Units for the Collection of Food Quantity_
+Gbemisola Oseni, Josefine Durazo, and Kevin McGee
+July 2017
+
+_Measuring the Role of Livestock in the Household Economy_
+Alberto Zezza, Ugo Pica-Ciamarra, Harriet K. Mugera, Titus Mwisomba, and Patrick Okell
+November 2016
+
+_Land Area Measurement in Household Surveys_
+Gero Carletto, Sydney Gourlay, Siobhan Murray, and Alberto Zezza
+August 2016
+
+_Measuring Asset Ownership from a Gender Perspective_
+Talip Kilic and Heather Moylan
+April 2016
+
+_Measuring Conflict Exposure in Micro-Level Surveys_
+Tilman Brück, Patricia Justino, Philip Verwimp, and Andrew Tedesco
+August 2013
+
+_Improving the Measurement and Policy Relevance of Migration Information in Multi-topic Household Surveys_
+Alan de Brauw and Calogero Carletto
+May 2012
+
+_Design and Implementation of Fishery Modules in Integrated Household Surveys in Developing Countries_
+Christophe Béné, Asafu D.G. Chijere, Edward H. Allison, Katherine Snyder, and Charles Crissman
+May 2012
+
+_Agricultural Household Adaptation to Climate Change: Land Management & Investment_
+Nancy McCarthy
+December 2011
+
+_Agricultural Household Adaptation to Climate Change: Water Stress & Variability_
+Sushenjit Bandyopadhyay, Limin Wang, and Marcus Wijnen
+August 2011
+
+_Comparative Assessment of Computer-Assisted Personal Interview (CAPI) Software Packages_
+Arthur Shaw, Lena Nguyen, Ulrike Nischan, and Herschel Sy
+July 2011
+
+:::
